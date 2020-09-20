@@ -1,0 +1,1239 @@
+{
+  "contractName": "Ballot",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "wallets",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "inst",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "stud",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "aadhar",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct Ballot.Documents",
+          "name": "documents",
+          "type": "tuple"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "instituteaddress",
+          "type": "address"
+        }
+      ],
+      "name": "createNewMultiSigbyUser",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "a",
+          "type": "string"
+        }
+      ],
+      "name": "uploadAadhar",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"instituteaddress\",\"type\":\"address\"}],\"name\":\"createNewMultiSigbyUser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"a\",\"type\":\"string\"}],\"name\":\"uploadAadhar\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"wallets\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"inst\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"stud\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"string\",\"name\":\"aadhar\",\"type\":\"string\"}],\"internalType\":\"struct Ballot.Documents\",\"name\":\"documents\",\"type\":\"tuple\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/hp/Desktop/myproj/contracts/SimpleStorage.sol\":\"Ballot\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/hp/Desktop/myproj/contracts/SimpleStorage.sol\":{\"keccak256\":\"0x75da947f77e3f8ab4eb72ab029d3d8629cfeaee7462c4d5b63e574e4867b6e33\",\"urls\":[\"bzz-raw://0a56a4db5716482eefa5a33fbb7f7bae06990cb74998778f95484e41bc04758b\",\"dweb:/ipfs/Qmb2iEFf4XJdeBTRTsY42ZnvSgg6KLaZkf6ARBwCijhpx9\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506105a3806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806302e8dbc01461004657806389b08f1114610062578063fc75d4f514610094575b600080fd5b610060600480360361005b919081019061035e565b6100b0565b005b61007c60048036036100779190810190610335565b6100b3565b60405161008b93929190610411565b60405180910390f35b6100ae60048036036100a99190810190610335565b6101c9565b005b50565b60006020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169080600201604051806020016040529081600082018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101bb5780601f10610190576101008083540402835291602001916101bb565b820191906000526020600020905b81548152906001019060200180831161019e57829003601f168201915b505050505081525050905083565b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550336000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000813590506102db81610549565b92915050565b600082601f8301126102f257600080fd5b81356103056103008261047c565b61044f565b9150808252602083016020830185838301111561032157600080fd5b61032c8382846104f6565b50505092915050565b60006020828403121561034757600080fd5b6000610355848285016102cc565b91505092915050565b60006020828403121561037057600080fd5b600082013567ffffffffffffffff81111561038a57600080fd5b610396848285016102e1565b91505092915050565b6103a8816104c4565b82525050565b60006103b9826104a8565b6103c381856104b3565b93506103d3818560208601610505565b6103dc81610538565b840191505092915050565b6000602083016000830151848203600086015261040482826103ae565b9150508091505092915050565b6000606082019050610426600083018661039f565b610433602083018561039f565b818103604083015261044581846103e7565b9050949350505050565b6000604051905081810181811067ffffffffffffffff8211171561047257600080fd5b8060405250919050565b600067ffffffffffffffff82111561049357600080fd5b601f19601f8301169050602081019050919050565b600081519050919050565b600082825260208201905092915050565b60006104cf826104d6565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b82818337600083830152505050565b60005b83811015610523578082015181840152602081019050610508565b83811115610532576000848401525b50505050565b6000601f19601f8301169050919050565b610552816104c4565b811461055d57600080fd5b5056fea365627a7a7231582029f54e446ea02e368a524c1df1341c6b61e0295bee5eea8f76e9456fe63505986c6578706572696d656e74616cf564736f6c63430005100040",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806302e8dbc01461004657806389b08f1114610062578063fc75d4f514610094575b600080fd5b610060600480360361005b919081019061035e565b6100b0565b005b61007c60048036036100779190810190610335565b6100b3565b60405161008b93929190610411565b60405180910390f35b6100ae60048036036100a99190810190610335565b6101c9565b005b50565b60006020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169080600201604051806020016040529081600082018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101bb5780601f10610190576101008083540402835291602001916101bb565b820191906000526020600020905b81548152906001019060200180831161019e57829003601f168201915b505050505081525050905083565b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550336000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000813590506102db81610549565b92915050565b600082601f8301126102f257600080fd5b81356103056103008261047c565b61044f565b9150808252602083016020830185838301111561032157600080fd5b61032c8382846104f6565b50505092915050565b60006020828403121561034757600080fd5b6000610355848285016102cc565b91505092915050565b60006020828403121561037057600080fd5b600082013567ffffffffffffffff81111561038a57600080fd5b610396848285016102e1565b91505092915050565b6103a8816104c4565b82525050565b60006103b9826104a8565b6103c381856104b3565b93506103d3818560208601610505565b6103dc81610538565b840191505092915050565b6000602083016000830151848203600086015261040482826103ae565b9150508091505092915050565b6000606082019050610426600083018661039f565b610433602083018561039f565b818103604083015261044581846103e7565b9050949350505050565b6000604051905081810181811067ffffffffffffffff8211171561047257600080fd5b8060405250919050565b600067ffffffffffffffff82111561049357600080fd5b601f19601f8301169050602081019050919050565b600081519050919050565b600082825260208201905092915050565b60006104cf826104d6565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b82818337600083830152505050565b60005b83811015610523578082015181840152602081019050610508565b83811115610532576000848401525b50505050565b6000601f19601f8301169050919050565b610552816104c4565b811461055d57600080fd5b5056fea365627a7a7231582029f54e446ea02e368a524c1df1341c6b61e0295bee5eea8f76e9456fe63505986c6578706572696d656e74616cf564736f6c63430005100040",
+  "sourceMap": "61:588:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:588:1;;;;;;;",
+  "deployedSourceMap": "61:588:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:588:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;523:123;;;;;;;;;;;;;;;;:::i;:::-;;239:41;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;288:227;;;;;;;;;;;;;;;;:::i;:::-;;523:123;;:::o;239:41::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;288:227::-;439:16;412:7;:19;420:10;412:19;;;;;;;;;;;;;;;:24;;;:43;;;;;;;;;;;;;;;;;;493:10;466:7;:19;474:10;466:19;;;;;;;;;;;;;;;:24;;;:37;;;;;;;;;;;;;;;;;;288:227;:::o;5:130:-1:-;;85:6;72:20;63:29;;97:33;124:5;97:33;;;57:78;;;;;143:442;;245:3;238:4;230:6;226:17;222:27;212:2;;263:1;260;253:12;212:2;300:6;287:20;322:65;337:49;379:6;337:49;;;322:65;;;313:74;;407:6;400:5;393:21;443:4;435:6;431:17;476:4;469:5;465:16;511:3;502:6;497:3;493:16;490:25;487:2;;;528:1;525;518:12;487:2;538:41;572:6;567:3;562;538:41;;;205:380;;;;;;;;593:241;;697:2;685:9;676:7;672:23;668:32;665:2;;;713:1;710;703:12;665:2;748:1;765:53;810:7;801:6;790:9;786:22;765:53;;;755:63;;727:97;659:175;;;;;841:347;;955:2;943:9;934:7;930:23;926:32;923:2;;;971:1;968;961:12;923:2;1034:1;1023:9;1019:17;1006:31;1057:18;1049:6;1046:30;1043:2;;;1089:1;1086;1079:12;1043:2;1109:63;1164:7;1155:6;1144:9;1140:22;1109:63;;;1099:73;;985:193;917:271;;;;;1195:113;1278:24;1296:5;1278:24;;;1273:3;1266:37;1260:48;;;1315:319;;1413:35;1442:5;1413:35;;;1460:61;1514:6;1509:3;1460:61;;;1453:68;;1526:52;1571:6;1566:3;1559:4;1552:5;1548:16;1526:52;;;1599:29;1621:6;1599:29;;;1594:3;1590:39;1583:46;;1393:241;;;;;;1698:411;;1845:4;1840:3;1836:14;1930:4;1923:5;1919:16;1913:23;1982:3;1976:4;1972:14;1965:4;1960:3;1956:14;1949:38;2002:69;2066:4;2052:12;2002:69;;;1994:77;;1865:218;2100:4;2093:11;;1818:291;;;;;;2116:575;;2336:2;2325:9;2321:18;2313:26;;2350:71;2418:1;2407:9;2403:17;2394:6;2350:71;;;2432:72;2500:2;2489:9;2485:18;2476:6;2432:72;;;2552:9;2546:4;2542:20;2537:2;2526:9;2522:18;2515:48;2577:104;2676:4;2667:6;2577:104;;;2569:112;;2307:384;;;;;;;2698:256;;2760:2;2754:9;2744:19;;2798:4;2790:6;2786:17;2897:6;2885:10;2882:22;2861:18;2849:10;2846:34;2843:62;2840:2;;;2918:1;2915;2908:12;2840:2;2938:10;2934:2;2927:22;2738:216;;;;;2961:322;;3105:18;3097:6;3094:30;3091:2;;;3137:1;3134;3127:12;3091:2;3204:4;3200:9;3193:4;3185:6;3181:17;3177:33;3169:41;;3268:4;3262;3258:15;3250:23;;3028:255;;;;3290:118;;3380:5;3374:12;3364:22;;3345:63;;;;3416:153;;3521:6;3516:3;3509:19;3558:4;3553:3;3549:14;3534:29;;3502:67;;;;;3577:91;;3639:24;3657:5;3639:24;;;3628:35;;3622:46;;;;3675:121;;3748:42;3741:5;3737:54;3726:65;;3720:76;;;;3804:145;3885:6;3880:3;3875;3862:30;3941:1;3932:6;3927:3;3923:16;3916:27;3855:94;;;;3958:268;4023:1;4030:101;4044:6;4041:1;4038:13;4030:101;;;4120:1;4115:3;4111:11;4105:18;4101:1;4096:3;4092:11;4085:39;4066:2;4063:1;4059:10;4054:15;;4030:101;;;4146:6;4143:1;4140:13;4137:2;;;4211:1;4202:6;4197:3;4193:16;4186:27;4137:2;4007:219;;;;;4234:97;;4322:2;4318:7;4313:2;4306:5;4302:14;4298:28;4288:38;;4282:49;;;;4339:117;4408:24;4426:5;4408:24;;;4401:5;4398:35;4388:2;;4447:1;4444;4437:12;4388:2;4382:74;",
+  "source": "pragma solidity ^0.5.16;\r\npragma experimental ABIEncoderV2;\r\ncontract Ballot {\r\n \r\nstruct Documents {\r\n    \r\n    string aadhar;\r\n\r\n}\r\n\r\nstruct MultiSig\r\n{\r\n    \r\n    address inst;\r\n    address stud;\r\nDocuments documents;\r\n    \r\n    \r\n}\r\n\r\nmapping(address=>MultiSig) public wallets ;\r\n\r\n\r\nfunction createNewMultiSigbyUser(address instituteaddress) public {\r\n        \r\n        //wa = wallets[msg.sender];\r\n        wallets[msg.sender].inst = instituteaddress;\r\n        wallets[msg.sender].stud = msg.sender;\r\n    \r\n\r\n}\r\n\r\n\r\n\r\nfunction uploadAadhar(string memory a)public {\r\n    \r\n    //string memory wa1 = wallets[msg.sender];\r\n\r\n    \r\n    \r\n    \r\n}\r\n}\r\n\r\n",
+  "sourcePath": "C:\\Users\\hp\\Desktop\\myproj\\contracts\\SimpleStorage.sol",
+  "ast": {
+    "absolutePath": "/C/Users/hp/Desktop/myproj/contracts/SimpleStorage.sol",
+    "exportedSymbols": {
+      "Ballot": [
+        103
+      ]
+    },
+    "id": 104,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "id": 59,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "26:33:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 103,
+        "linearizedBaseContracts": [
+          103
+        ],
+        "name": "Ballot",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Ballot.Documents",
+            "id": 62,
+            "members": [
+              {
+                "constant": false,
+                "id": 61,
+                "name": "aadhar",
+                "nodeType": "VariableDeclaration",
+                "scope": 62,
+                "src": "113:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 60,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "113:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Documents",
+            "nodeType": "StructDefinition",
+            "scope": 103,
+            "src": "83:49:1",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Ballot.MultiSig",
+            "id": 69,
+            "members": [
+              {
+                "constant": false,
+                "id": 64,
+                "name": "inst",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "166:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 63,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "166:7:1",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 66,
+                "name": "stud",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "185:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 65,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "185:7:1",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 68,
+                "name": "documents",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "200:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Documents_$62_storage_ptr",
+                  "typeString": "struct Ballot.Documents"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 67,
+                  "name": "Documents",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 62,
+                  "src": "200:9:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Documents_$62_storage_ptr",
+                    "typeString": "struct Ballot.Documents"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "MultiSig",
+            "nodeType": "StructDefinition",
+            "scope": 103,
+            "src": "136:99:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 73,
+            "name": "wallets",
+            "nodeType": "VariableDeclaration",
+            "scope": 103,
+            "src": "239:41:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_MultiSig_$69_storage_$",
+              "typeString": "mapping(address => struct Ballot.MultiSig)"
+            },
+            "typeName": {
+              "id": 72,
+              "keyType": {
+                "id": 70,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "247:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "239:26:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_MultiSig_$69_storage_$",
+                "typeString": "mapping(address => struct Ballot.MultiSig)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 71,
+                "name": "MultiSig",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 69,
+                "src": "256:8:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_MultiSig_$69_storage_ptr",
+                  "typeString": "struct Ballot.MultiSig"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 95,
+              "nodeType": "Block",
+              "src": "354:161:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 84,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 78,
+                          "name": "wallets",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 73,
+                          "src": "412:7:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_MultiSig_$69_storage_$",
+                            "typeString": "mapping(address => struct Ballot.MultiSig storage ref)"
+                          }
+                        },
+                        "id": 81,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 79,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 118,
+                            "src": "420:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 80,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "420:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "412:19:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_MultiSig_$69_storage",
+                          "typeString": "struct Ballot.MultiSig storage ref"
+                        }
+                      },
+                      "id": 82,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "inst",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 64,
+                      "src": "412:24:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 83,
+                      "name": "instituteaddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 75,
+                      "src": "439:16:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "412:43:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 85,
+                  "nodeType": "ExpressionStatement",
+                  "src": "412:43:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 93,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 86,
+                          "name": "wallets",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 73,
+                          "src": "466:7:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_MultiSig_$69_storage_$",
+                            "typeString": "mapping(address => struct Ballot.MultiSig storage ref)"
+                          }
+                        },
+                        "id": 89,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 87,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 118,
+                            "src": "474:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 88,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "474:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "466:19:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_MultiSig_$69_storage",
+                          "typeString": "struct Ballot.MultiSig storage ref"
+                        }
+                      },
+                      "id": 90,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "stud",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 66,
+                      "src": "466:24:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 91,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 118,
+                        "src": "493:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 92,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "493:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "466:37:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 94,
+                  "nodeType": "ExpressionStatement",
+                  "src": "466:37:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 96,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createNewMultiSigbyUser",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 76,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 75,
+                  "name": "instituteaddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 96,
+                  "src": "321:24:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 74,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "321:7:1",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "320:26:1"
+            },
+            "returnParameters": {
+              "id": 77,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "354:0:1"
+            },
+            "scope": 103,
+            "src": "288:227:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 101,
+              "nodeType": "Block",
+              "src": "568:78:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 102,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "uploadAadhar",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 99,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 98,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 102,
+                  "src": "545:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 97,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "545:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "544:17:1"
+            },
+            "returnParameters": {
+              "id": 100,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "568:0:1"
+            },
+            "scope": 103,
+            "src": "523:123:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 104,
+        "src": "61:588:1"
+      }
+    ],
+    "src": "0:653:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/hp/Desktop/myproj/contracts/SimpleStorage.sol",
+    "exportedSymbols": {
+      "Ballot": [
+        103
+      ]
+    },
+    "id": 104,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "id": 59,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "26:33:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 103,
+        "linearizedBaseContracts": [
+          103
+        ],
+        "name": "Ballot",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Ballot.Documents",
+            "id": 62,
+            "members": [
+              {
+                "constant": false,
+                "id": 61,
+                "name": "aadhar",
+                "nodeType": "VariableDeclaration",
+                "scope": 62,
+                "src": "113:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 60,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "113:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Documents",
+            "nodeType": "StructDefinition",
+            "scope": 103,
+            "src": "83:49:1",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Ballot.MultiSig",
+            "id": 69,
+            "members": [
+              {
+                "constant": false,
+                "id": 64,
+                "name": "inst",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "166:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 63,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "166:7:1",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 66,
+                "name": "stud",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "185:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 65,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "185:7:1",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 68,
+                "name": "documents",
+                "nodeType": "VariableDeclaration",
+                "scope": 69,
+                "src": "200:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Documents_$62_storage_ptr",
+                  "typeString": "struct Ballot.Documents"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 67,
+                  "name": "Documents",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 62,
+                  "src": "200:9:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Documents_$62_storage_ptr",
+                    "typeString": "struct Ballot.Documents"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "MultiSig",
+            "nodeType": "StructDefinition",
+            "scope": 103,
+            "src": "136:99:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 73,
+            "name": "wallets",
+            "nodeType": "VariableDeclaration",
+            "scope": 103,
+            "src": "239:41:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_MultiSig_$69_storage_$",
+              "typeString": "mapping(address => struct Ballot.MultiSig)"
+            },
+            "typeName": {
+              "id": 72,
+              "keyType": {
+                "id": 70,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "247:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "239:26:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_MultiSig_$69_storage_$",
+                "typeString": "mapping(address => struct Ballot.MultiSig)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 71,
+                "name": "MultiSig",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 69,
+                "src": "256:8:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_MultiSig_$69_storage_ptr",
+                  "typeString": "struct Ballot.MultiSig"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 95,
+              "nodeType": "Block",
+              "src": "354:161:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 84,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 78,
+                          "name": "wallets",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 73,
+                          "src": "412:7:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_MultiSig_$69_storage_$",
+                            "typeString": "mapping(address => struct Ballot.MultiSig storage ref)"
+                          }
+                        },
+                        "id": 81,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 79,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 118,
+                            "src": "420:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 80,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "420:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "412:19:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_MultiSig_$69_storage",
+                          "typeString": "struct Ballot.MultiSig storage ref"
+                        }
+                      },
+                      "id": 82,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "inst",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 64,
+                      "src": "412:24:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 83,
+                      "name": "instituteaddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 75,
+                      "src": "439:16:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "412:43:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 85,
+                  "nodeType": "ExpressionStatement",
+                  "src": "412:43:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 93,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 86,
+                          "name": "wallets",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 73,
+                          "src": "466:7:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_MultiSig_$69_storage_$",
+                            "typeString": "mapping(address => struct Ballot.MultiSig storage ref)"
+                          }
+                        },
+                        "id": 89,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 87,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 118,
+                            "src": "474:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 88,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "474:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "466:19:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_MultiSig_$69_storage",
+                          "typeString": "struct Ballot.MultiSig storage ref"
+                        }
+                      },
+                      "id": 90,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "stud",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 66,
+                      "src": "466:24:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 91,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 118,
+                        "src": "493:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 92,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "493:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "466:37:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 94,
+                  "nodeType": "ExpressionStatement",
+                  "src": "466:37:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 96,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createNewMultiSigbyUser",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 76,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 75,
+                  "name": "instituteaddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 96,
+                  "src": "321:24:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 74,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "321:7:1",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "320:26:1"
+            },
+            "returnParameters": {
+              "id": 77,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "354:0:1"
+            },
+            "scope": 103,
+            "src": "288:227:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 101,
+              "nodeType": "Block",
+              "src": "568:78:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 102,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "uploadAadhar",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 99,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 98,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 102,
+                  "src": "545:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 97,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "545:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "544:17:1"
+            },
+            "returnParameters": {
+              "id": 100,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "568:0:1"
+            },
+            "scope": 103,
+            "src": "523:123:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 104,
+        "src": "61:588:1"
+      }
+    ],
+    "src": "0:653:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-04-10T14:04:33.386Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
